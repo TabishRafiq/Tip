@@ -1,0 +1,211 @@
+body {
+  color: #ffffff;
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+}
+
+.a {
+
+position: static;
+width: 174px;
+height: 30px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+margin-top: 24px;
+}
+
+.b {
+margin-top: 48px;
+position: static;
+width: 190px;
+height: 204px;
+}
+
+h1 {
+  margin: 8px;
+  font-size: 24px;
+  color: black;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  position: static;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+  position: static;
+}
+
+h5 {
+  margin-top: 16px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  position: static;
+}
+
+
+button {
+  cursor: pointer;
+  background: #352A51;
+  margin-top: 16px;
+  border: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 90%;
+  height: 56px;
+  bottom: 16px;
+  color: white;
+  position: fixed;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:48px;
+    color:rgba(0, 0, 0, 0.15);;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+   
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffc700;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #ffc700;
+}
+
+
+:root {
+	--white: #ffffff;
+	--light: #f0eff3;
+	--black: #000000;
+	--dark-blue: #1f2029;
+	--dark-light: #353746;
+	--red: #da2c4d;
+	--yellow: #f8ab37;
+	--grey: #ecedf3;
+}
+
+/* #Primary
+================================================== */
+
+
+.section {
+  margin-top: 32px;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+	width: 380px;
+	display: block;
+	text-align: center;
+  margin-bottom: 8px;
+}
+.over-hide {
+    overflow: hidden;
+}
+.z-bigger {
+    z-index: 100 !important;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkbox-budget:checked + label,
+.checkbox-budget:not(:checked) + label{
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	width: 110px;
+	font-size: 15px;
+	line-height: 48px;
+	font-weight: 700;
+  font-family: "Mulish", sans-serif;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 100px;
+	overflow: hidden;
+	cursor: pointer;
+    color: black;
+}
+.checkbox-budget:not(:checked) + label{
+	background-color:#F0EFF3;
+}
+
+.checkbox-budget:checked + label::before,
+.checkbox-budget:not(:checked) {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+  background-color: #FFBE3B;
+	z-index: -1;
+}
+
+
