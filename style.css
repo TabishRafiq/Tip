@@ -100,6 +100,7 @@ button {
 .rate:not(:checked) > input {
     position:absolute;
     top:-9999px;
+    
 }
 .rate:not(:checked) > label {
     float:right;
@@ -115,13 +116,15 @@ button {
    
 }
 .rate > input:checked ~ label {
-    color: #FFBE3B; 
-    animation: bounce 1s infinite alternate;
-    -webkit-animation: bounce 1s infinite alternate;   
+    color: #FFBE3B;    
+    animation: bounce 0.5s infinite alternate;
+    -webkit-animation: bounce 0.5s infinite alternate;   
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
     color: #FFBE3B;  
+    animation: bounce 0.5s infinite alternate;
+    -webkit-animation: bounce 0.5s infinite alternate;   
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -129,6 +132,8 @@ button {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #FFBE3B;
+    animation: bounce 0.5s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;   
 }
 
 @keyframes bounce {
@@ -136,7 +141,7 @@ button {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 }
 @-webkit-keyframes bounce {
@@ -144,7 +149,7 @@ button {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 }
 
