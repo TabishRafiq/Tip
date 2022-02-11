@@ -115,7 +115,9 @@ button {
    
 }
 .rate > input:checked ~ label {
-    color: #FFBE3B;    
+    color: #FFBE3B; 
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;   
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
@@ -127,6 +129,23 @@ button {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #FFBE3B;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 
 
