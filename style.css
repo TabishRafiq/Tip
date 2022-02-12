@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 body {
   color: #ffffff;
   display: flex;
@@ -40,8 +42,8 @@ margin-top: 32px;
 .b {
 margin-top: 48px;
 position: static;
-width: 190px;
-height: 204px;
+width: 191px;
+height: 207px;
 pointer-events: none;
 
 }
@@ -122,11 +124,14 @@ button {
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:48px;
+    margin: 8px;
+    margin-top: 18px;
+    font-size:36px;
     color:rgba(0, 0, 0, 0.15);;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+  font-family: FontAwesome;
+    content: "\f005";
    
 }
 .rate > input:checked ~ label {
