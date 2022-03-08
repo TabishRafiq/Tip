@@ -5,7 +5,7 @@ function print()
 {
  var a = document.querySelector('input[name="budget"]:checked').value;
  //Android.Qpay(parseInt(a));
- Android.askConsent();
+ Android.askConsent("Tip");
  //console.log(a);
 }
 
