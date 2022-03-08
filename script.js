@@ -4,6 +4,12 @@
 function print() 
 {
  var a = document.querySelector('input[name="budget"]:checked').value;
- Android.Qpay(parseInt(a));
- console.log(a);
+ //Android.Qpay(parseInt(a));
+ Android.askConsent();
+ //console.log(a);
+}
+
+function confirmed(val)
+{
+   alert(val);
 }
